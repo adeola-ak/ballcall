@@ -1,12 +1,15 @@
 import React from "react";
-import nba from "nba-api-client";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import nba, { teamDetails } from "nba-api-client";
 import teamData from "./teamData.js";
 import TopTeams from "./TopTeams";
+import Conference from "./Conference";
 import TeamDetails from "./TeamDetails";
+import Nav from "./Nav";
 
 const App = () => {
-	const api = nba;
-	console.log(api);
+	// const api = nba;
+	// console.log(api);
 
 	const west = teamData.filter((team) => team.Conf === "West");
 	const topWest = west.filter(
@@ -35,11 +38,14 @@ const App = () => {
 	);
 
 	return (
-		<>
+		<Router>
+			<Nav />
+
 			<TopTeams teamData={topWest} />
-			<TopTeams teamData={topEast} />;
+			<TopTeams teamData={topEast} />
 			<TeamDetails />
-		</>
+			{/* <Conference teamData={teamData} /> */}
+		</Router>
 	);
 };
 

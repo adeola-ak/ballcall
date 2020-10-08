@@ -1,5 +1,5 @@
 import React from "react";
-import nba from "nba-api-client";
+import nba, { teamDetails } from "nba-api-client";
 
 const TeamDetails = () => {
 	return <div></div>;
