@@ -1,22 +1,26 @@
 import React from "react";
-// import nba from "nba-api-client";
+import { getTeamLogoURLs } from "nba-api-client";
+import nba from "nba-api-client";
 
 const TopTeams = (props) => {
 	console.log(props.teamData);
 	const teams = props.teamData;
-	const westTop = teams.map((team) => {
-		return (
-			<ul>
-				<li>{team.name}</li>
-				<li>{team.Abbrev}</li>
-			</ul>
-		);
+
+	const buttonImg = teams.map((team, index) => {
+		const logoUrls = getTeamLogoURLs(team.Abbrev);
+		const logo = logoUrls[0];
+
+		return <img key={index} src={logo} style={{ height: "6em" }} />;
 	});
 
 	return (
-		<div>{westTop}</div>
-
-		//  logo = nba.getTeamLogoURLs(abbrev);
+		<>
+			<div>
+				<h1>TOP TEAMS</h1>
+				{buttonImg}
+				<h3>Click for full conference</h3>
+			</div>
+		</>
 	);
 };
 

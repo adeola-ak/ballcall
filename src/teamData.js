@@ -5,6 +5,7 @@ export default [
 		Abbrev: "ATL",
 		// TeamName: "Hawks",
 		// City: "Atlanta",
+		Conf: "East",
 	},
 
 	{
@@ -13,6 +14,7 @@ export default [
 		Abbrev: "BOS",
 		TeamName: "Celtics",
 		City: "Boston",
+		Conf: "East",
 	},
 
 	{
@@ -21,6 +23,7 @@ export default [
 		Abbrev: "BKN",
 		TeamName: "Nets",
 		City: "Brooklyn",
+		Conf: "East",
 	},
 
 	{
@@ -29,6 +32,7 @@ export default [
 		Abbrev: "CHA",
 		TeamName: "Hornets",
 		City: "Charlotte",
+		Conf: "East",
 	},
 
 	{
@@ -37,6 +41,7 @@ export default [
 		Abbrev: "CHI",
 		TeamName: "Bulls",
 		City: "Chicago",
+		Conf: "East",
 	},
 
 	{
@@ -45,6 +50,7 @@ export default [
 		Abbrev: "CLE",
 		TeamName: "Cavaliers",
 		City: "Cleveland",
+		Conf: "East",
 	},
 
 	{
@@ -53,6 +59,7 @@ export default [
 		Abbrev: "DAL",
 		TeamName: "Mavericks",
 		City: "Dallas",
+		Conf: "West",
 	},
 
 	{
@@ -61,6 +68,7 @@ export default [
 		Abbrev: "DEN",
 		TeamName: "Nuggets",
 		City: "Denver",
+		Conf: "West",
 	},
 
 	{
@@ -69,6 +77,7 @@ export default [
 		Abbrev: "DET",
 		TeamName: "Pistons",
 		City: "Detroit",
+		Conf: "East",
 	},
 
 	{
@@ -77,6 +86,7 @@ export default [
 		Abbrev: "GSW",
 		TeamName: "Warriors",
 		City: "Golden State",
+		Conf: "West",
 	},
 
 	{
@@ -85,6 +95,7 @@ export default [
 		Abbrev: "HOU",
 		TeamName: "Rockets",
 		City: "Houston",
+		Conf: "West",
 	},
 
 	{
@@ -93,6 +104,7 @@ export default [
 		Abbrev: "IND",
 		TeamName: "Pacers",
 		City: "Indiana",
+		Conf: "East",
 	},
 
 	{
@@ -101,6 +113,7 @@ export default [
 		Abbrev: "LAC",
 		TeamName: "Clippers",
 		City: "Los Angeles",
+		Conf: "West",
 	},
 
 	{
@@ -109,6 +122,7 @@ export default [
 		Abbrev: "LAL",
 		TeamName: "Lakers",
 		City: "Los Angeles",
+		Conf: "West",
 	},
 
 	{
@@ -117,6 +131,7 @@ export default [
 		Abbrev: "MEM",
 		TeamName: "Grizzlies",
 		City: "Memphis",
+		Conf: "West",
 	},
 
 	{
@@ -125,6 +140,7 @@ export default [
 		Abbrev: "MIA",
 		TeamName: "Heat",
 		City: "Miami",
+		Conf: "East",
 	},
 
 	{
@@ -133,6 +149,7 @@ export default [
 		Abbrev: "MIL",
 		TeamName: "Bucks",
 		City: "Milwaukee",
+		Conf: "East",
 	},
 
 	{
@@ -141,6 +158,7 @@ export default [
 		Abbrev: "MIN",
 		TeamName: "Timberwolves",
 		City: "Minnesota",
+		Conf: "West",
 	},
 
 	{
@@ -149,6 +167,7 @@ export default [
 		Abbrev: "NOP",
 		TeamName: "Pelicans",
 		City: "New Orleans",
+		Conf: "West",
 	},
 
 	{
@@ -157,6 +176,7 @@ export default [
 		Abbrev: "NYK",
 		TeamName: "Knicks",
 		City: "New York",
+		Conf: "East",
 	},
 
 	{
@@ -165,6 +185,7 @@ export default [
 		Abbrev: "OKC",
 		TeamName: "Thunder",
 		City: "Oklahoma City",
+		Conf: "West",
 	},
 
 	{
@@ -173,6 +194,7 @@ export default [
 		Abbrev: "ORL",
 		TeamName: "Magic",
 		City: "Orlando",
+		Conf: "East",
 	},
 
 	{
@@ -181,6 +203,7 @@ export default [
 		Abbrev: "PHI",
 		TeamName: "76ers",
 		City: "Philadelphia",
+		Conf: "East",
 	},
 
 	{
@@ -189,6 +212,7 @@ export default [
 		Abbrev: "PHX",
 		TeamName: "Suns",
 		City: "Phoenix",
+		Conf: "West",
 	},
 
 	{
@@ -197,6 +221,7 @@ export default [
 		Abbrev: "POR",
 		TeamName: "Trail Blazers",
 		City: "Portland",
+		Conf: "West",
 	},
 
 	{
@@ -205,6 +230,7 @@ export default [
 		Abbrev: "SAC",
 		TeamName: "Kings",
 		City: "Sacramento",
+		Conf: "West",
 	},
 
 	{
@@ -213,6 +239,7 @@ export default [
 		Abbrev: "SAS",
 		TeamName: "Spurs",
 		City: "San Antonio",
+		Conf: "West",
 	},
 
 	{
@@ -221,6 +248,7 @@ export default [
 		Abbrev: "TOR",
 		TeamName: "Raptors",
 		City: "Toronto",
+		Conf: "East",
 	},
 
 	{
@@ -229,6 +257,7 @@ export default [
 		Abbrev: "UTA",
 		TeamName: "Jazz",
 		City: "Utah",
+		Conf: "West",
 	},
 
 	{
@@ -237,5 +266,6 @@ export default [
 		Abbrev: "WAS",
 		TeamName: "Wizards",
 		City: "Washington",
+		Conf: "East",
 	},
 ];
