@@ -1,9 +1,9 @@
 import React from "react";
 import nba from "nba-api-client";
-import teamData from "./teamData";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Conference = (props) => {
-	console.log(props.teamData);
+	console.log(props);
 	const teams = props.teamData;
 
 	const imgs = teams.map((team, index) => {
@@ -12,12 +12,7 @@ const Conference = (props) => {
 
 		return <img key={index} src={logo} style={{ height: "6em" }} />;
 	});
-	return (
-		<div>
-			<h1>TOP TEAMS</h1>
-			{imgs}
-		</div>
-	);
+	return <div></div>;
 };
 
 export default Conference;

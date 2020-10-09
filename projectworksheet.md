@@ -7,7 +7,7 @@
 
 ## Project Description
 
-This project in final form will be a small app used to display nba player stats upon search. the user will be able to interact with the page by search for a basketball player by name.
+This project in final form will be a small app used to display nba player stats by team. The user will be able to interact with the page by clicking on a team logo, which will then load to a page and display more details on that team.
 
 ## API
 
@@ -41,7 +41,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 
 -   Render team names as buttons, which directs to team page
--   Render individual player stats on button click
+-   Additional routes for more NBA stuff
 -   Contact me section
 
 #### PostMVP
@@ -49,9 +49,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 -   User will be be able to search
 -   News API
 -   Twitter API
--   Ticker for display news
+-   Ticker for displaying tweets
 -   User poll/ user submit player of the week via a form/ user can ask to be featured on the page via form
 -   Contact form
+-   Render individual player stats
 
 ## Components
 
@@ -62,7 +63,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component   |               Description                |
 | ----------- | :--------------------------------------: |
 | Nav         |                  Sticky                  |
-| Search bar  |       Possibly have auto complete        |
+| Logos       |           Clickable logo icons           |
 | Carosel     |             Random NBA image             |
 | News Api    |             Display NBA news             |
 | Twitter APi | Display whats trending in NBA on twitter |

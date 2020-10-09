@@ -1,15 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import nba, { teamDetails } from "nba-api-client";
+import { Switch, Route } from "react-router-dom";
+import nba from "nba-api-client";
 import teamData from "./teamData.js";
 import TopTeams from "./TopTeams";
 import Conference from "./Conference";
-import TeamDetails from "./TeamDetails";
+import TopPlayers from "./TopPlayers";
 import Nav from "./Nav";
+import Footer from "./Footer";
+import playerNames from "./playerNames";
 
 const App = () => {
-	// const api = nba;
-	// console.log(api);
+	const data = nba;
+	console.log(data);
 
 	const west = teamData.filter((team) => team.Conf === "West");
 	const topWest = west.filter(
@@ -37,15 +39,38 @@ const App = () => {
 			team.Abbrev === "ORL"
 	);
 
+	// useState will be set to nothing
+	// handle click method will set state for current conference
+	// after set state for conference pass it to conference route
+
 	return (
-		<Router>
+		<>
 			<Nav />
 
-			<TopTeams teamData={topWest} />
-			<TopTeams teamData={topEast} />
-			<TeamDetails />
-			{/* <Conference teamData={teamData} /> */}
-		</Router>
+			<Switch>
+				<Route
+					path="/TopPlayers/"
+					render={(routerProps) => (
+						<TopPlayers
+							playerNames={playerNames}
+							{...routerProps}
+						/>
+					)}
+				/>
+
+				<Route
+					path="/conference/:side"
+					render={(routerProps) => (
+						<Conference teamData={teamData} {...routerProps} />
+					)}
+				/>
+				<Route path="/">
+					<TopTeams teamData={topWest} west={west} side={"WEST"} />
+					<TopTeams teamData={topEast} east={east} side={"EAST"} />
+				</Route>
+			</Switch>
+			<Footer />
+		</>
 	);
 };
 
