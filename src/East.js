@@ -1,6 +1,8 @@
 import React from "react";
 import nba from "nba-api-client";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const East = (props) => {
 	const eastTeams = props.teamData;
@@ -18,6 +20,9 @@ const East = (props) => {
 	return (
 		<>
 			<div>{eastImgs}</div>
+			<Link to="/">
+				<Button variant="warning">back home</Button>
+			</Link>
 		</>
 	);
 };

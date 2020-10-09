@@ -41,6 +41,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 
 -   Render team names as buttons, which directs to team details page
+-   Team image button animations
 
 #### PostMVP
 
@@ -88,7 +89,11 @@ my api did not function as expected. it only returned some of the information th
 
 ## Future Plans For project
 
-work on Post MVP and add a blog section where i am writting opinions
+-   Work on Post MVP and
+-   Add a blog section where i am writting opinions
+-   Team image button animations
+-   Hopefully get NBA stats
+-   Do more styling
 
 ## Code Snippet
 
