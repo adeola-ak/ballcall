@@ -49,10 +49,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### PostMVP
 
 -   User will be be able to search
--   Ticker for displaying tweets (twitter api)
+-   Ticker for displaying current sports tweets with keywords (twitter api)
 -   User poll/ user submit player of the week via a form/ user can ask to be featured on the page via form
 -   Contact form
 -   Render individual player stats
+-   CSS animations
 
 ## Components
 
@@ -97,6 +98,7 @@ my api did not function as expected. it only returned some of the information th
 -   Team image button animations
 -   Hopefully get NBA stats
 -   Do more styling
+-   Maybe add some gifs
 
 ## Code Snippet
 
