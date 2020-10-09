@@ -3,7 +3,7 @@
 ## Project Links
 
 -   [github repo link](https://github.com/git-addi/reactapp)
--   [deployment link]()
+-   [deployment link](https://adoring-kilby-d29110.netlify.app/)
 
 ## Project Description
 
@@ -40,16 +40,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP
 
--   Render team names as buttons, which directs to team page
--   Additional routes for more NBA stuff
--   Contact me section
+-   Render team names as buttons, which directs to team details page
 
 #### PostMVP
 
 -   User will be be able to search
--   News API
--   Twitter API
--   Ticker for displaying tweets
+-   Ticker for displaying tweets (twitter api)
 -   User poll/ user submit player of the week via a form/ user can ask to be featured on the page via form
 -   Contact form
 -   Render individual player stats
@@ -85,6 +81,14 @@ Time frames are also key in the development cycle. You have limited time to code
 ## Additional Libraries
 
 scss
+
+## Problem Areas
+
+my api did not function as expected. it only returned some of the information that was described in the documentation sheets but not all. Had to spend some time hard coding what would not work and also had to re direct some parts of my project which was supposed to display team stats it had to be adjusted to display what the api still worked for which was team images.... i will add on by trying to get access to stats or just turing the page into a blog where i talk about the team and its top players that are displayed and more
+
+## Future Plans For project
+
+work on Post MVP and add a blog section where i am writting opinions
 
 ## Code Snippet
 
