@@ -40,8 +40,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP
 
+-   Connect to nba Api
+-   Routes
 -   Render team names as buttons, which directs to team details page
 -   Team image button animations
+-   SCSS
 
 #### PostMVP
 
