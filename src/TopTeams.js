@@ -1,6 +1,6 @@
 import React from "react";
 import { getTeamLogoURLs } from "nba-api-client";
-import nba from "nba-api-client";
+// import nba from "nba-api-client";
 import { Link } from "react-router-dom";
 
 const TopTeams = (props) => {
@@ -21,10 +21,10 @@ const TopTeams = (props) => {
 	return (
 		<>
 			<div>
-				<h1>TOP {props.side} TEAMS</h1>
+				<h1>top in the {props.side}</h1>
 				{imgs}
-				<Link to={`/conference/${props.side}`}>
-					<button>click for full conference</button>
+				<Link to={`/conference/${props.side}/full`}>
+					<button>full conference</button>
 				</Link>
 			</div>
 		</>

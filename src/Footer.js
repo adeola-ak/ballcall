@@ -1,11 +1,11 @@
 import React from "react";
-import nba from "nba-api-client";
+// import nba from "nba-api-client";
 
 const Footer = () => {
 	return (
 		<>
 			<div>
-				<h5>By Adeola</h5>
+				<h5>© 2020 Adeola Akinsiku. All rights reserved</h5>
 			</div>
 		</>
 	);

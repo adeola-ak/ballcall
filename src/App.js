@@ -8,6 +8,10 @@ import TopPlayers from "./TopPlayers";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import playerNames from "./playerNames";
+import Appcss from "./App.css";
+import West from "./West";
+import East from "./East";
+import Twitter from "./Twitter";
 
 const App = () => {
 	const data = nba;
@@ -39,22 +43,33 @@ const App = () => {
 			team.Abbrev === "ORL"
 	);
 
-	// useState will be set to nothing
-	// handle click method will set state for current conference
-	// after set state for conference pass it to conference route
-
 	return (
-		<>
+		<div className="Appjs">
 			<Nav />
-
 			<Switch>
-				<Route
+				{/* <Route
 					path="/TopPlayers/"
 					render={(routerProps) => (
 						<TopPlayers
 							playerNames={playerNames}
 							{...routerProps}
 						/>
+					)}
+				/> */}
+
+				<Route
+					exact
+					path="/conference/west/full"
+					render={(routerProps) => (
+						<West teamData={west} {...routerProps} />
+					)}
+				/>
+
+				<Route
+					exact
+					path="/conference/east/full"
+					render={(routerProps) => (
+						<East teamData={east} {...routerProps} />
 					)}
 				/>
 
@@ -65,12 +80,12 @@ const App = () => {
 					)}
 				/>
 				<Route path="/">
-					<TopTeams teamData={topWest} west={west} side={"WEST"} />
-					<TopTeams teamData={topEast} east={east} side={"EAST"} />
+					<TopTeams teamData={topWest} side={"WEST".toLowerCase()} />
+					<TopTeams teamData={topEast} side={"EAST".toLowerCase()} />
 				</Route>
 			</Switch>
 			<Footer />
-		</>
+		</div>
 	);
 };
 

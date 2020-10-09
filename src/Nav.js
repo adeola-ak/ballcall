@@ -8,14 +8,6 @@ const Nav = () => {
 	return (
 		<>
 			<header>
-				<Link to="/">
-					<h1>BALLCALL</h1>
-				</Link>
-				<ul>
-					<li>about</li>
-					<li>conferences</li>
-					<li>contact</li>
-				</ul>
 				<div>
 					<img
 						src={hero}
@@ -23,6 +15,14 @@ const Nav = () => {
 						style={{ width: "100%", height: "220px" }}
 					/>
 				</div>
+				<Link to="/">
+					<h1>ballblog</h1>
+				</Link>
+				<ul>
+					<li>about</li>
+					<li>conferences</li>
+					<li>contact</li>
+				</ul>
 			</header>
 		</>
 	);
