@@ -8,8 +8,6 @@ import East from "./East";
 import Appcss from "./App.scss";
 
 const Conference = (props) => {
-	console.log(props);
-
 	const teamConfs = props.teamData;
 	const west = teamConfs.filter((team) => team.Conf === "West");
 	const east = teamConfs.filter((team) => team.Conf === "East");
