@@ -18,11 +18,14 @@ const Nav = () => {
 				<Link to="/">
 					<h1>ballblog</h1>
 				</Link>
-				<ul>
-					<li>about</li>
-					<li>conferences</li>
-					<li>contact</li>
-				</ul>
+				<nav>
+					<ul>
+						<li>about</li>
+						<li>contact</li>
+						<li>blog(soon)</li>
+						<li>stats(soon)</li>
+					</ul>
+				</nav>
 			</header>
 		</>
 	);

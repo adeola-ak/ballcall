@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import West from "./West";
 import East from "./East";
 // import teamData from "./teamData";
-import Appcss from "./App.css";
+import Appcss from "./App.scss";
 
 const Conference = (props) => {
 	console.log(props);

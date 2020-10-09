@@ -1,5 +1,6 @@
 import React from "react";
 import nba from "nba-api-client";
+import { Link } from "react-router-dom";
 
 const East = (props) => {
 	const eastTeams = props.teamData;
@@ -7,7 +8,11 @@ const East = (props) => {
 		const logoUrls = nba.getTeamLogoURLs(team.Abbrev);
 		const logo = logoUrls[0];
 
-		return <img key={index} alt="" src={logo} style={{ height: "6em" }} />;
+		return (
+			<Link to={`/TopPlayers/${team.Abbrev}`}>
+				<img key={index} alt="" src={logo} style={{ height: "6em" }} />
+			</Link>
+		);
 	});
 
 	return (

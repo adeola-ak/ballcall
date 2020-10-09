@@ -8,10 +8,11 @@ import TopPlayers from "./TopPlayers";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import playerNames from "./playerNames";
-import Appcss from "./App.css";
+import "./App.scss";
 import West from "./West";
 import East from "./East";
 import Twitter from "./Twitter";
+import "./index.css";
 
 const App = () => {
 	const data = nba;
@@ -44,47 +45,55 @@ const App = () => {
 	);
 
 	return (
-		<div className="Appjs">
-			<Nav />
-			<Switch>
-				{/* <Route
-					path="/TopPlayers/"
-					render={(routerProps) => (
-						<TopPlayers
-							playerNames={playerNames}
-							{...routerProps}
+		<div className="background">
+			<div className="Appjs">
+				<Nav />
+				<Switch>
+					<Route
+						path="/TopPlayers/:abbrev"
+						render={(routerProps) => (
+							<TopPlayers
+								playerNames={playerNames}
+								{...routerProps}
+							/>
+						)}
+					/>
+
+					<Route
+						exact
+						path="/conference/west/full"
+						render={(routerProps) => (
+							<West teamData={west} {...routerProps} />
+						)}
+					/>
+
+					<Route
+						exact
+						path="/conference/east/full"
+						render={(routerProps) => (
+							<East teamData={east} {...routerProps} />
+						)}
+					/>
+
+					<Route
+						path="/conference/:side"
+						render={(routerProps) => (
+							<Conference teamData={teamData} {...routerProps} />
+						)}
+					/>
+					<Route path="/">
+						<TopTeams
+							teamData={topWest}
+							side={"WEST".toLowerCase()}
 						/>
-					)}
-				/> */}
-
-				<Route
-					exact
-					path="/conference/west/full"
-					render={(routerProps) => (
-						<West teamData={west} {...routerProps} />
-					)}
-				/>
-
-				<Route
-					exact
-					path="/conference/east/full"
-					render={(routerProps) => (
-						<East teamData={east} {...routerProps} />
-					)}
-				/>
-
-				<Route
-					path="/conference/:side"
-					render={(routerProps) => (
-						<Conference teamData={teamData} {...routerProps} />
-					)}
-				/>
-				<Route path="/">
-					<TopTeams teamData={topWest} side={"WEST".toLowerCase()} />
-					<TopTeams teamData={topEast} side={"EAST".toLowerCase()} />
-				</Route>
-			</Switch>
-			<Footer />
+						<TopTeams
+							teamData={topEast}
+							side={"EAST".toLowerCase()}
+						/>
+					</Route>
+				</Switch>
+				<Footer />
+			</div>
 		</div>
 	);
 };

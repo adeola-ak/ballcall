@@ -1,0 +1,51 @@
+.Appjs {
+	background-color: rgb(32, 34, 37);
+	/* background-color: rgb(32, 34, 37); */
+	border: 4px solid paleturquoise;
+}
+
+* {
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	font-family: "Permanent Marker", cursive;
+	font-size: 50px;
+}
+
+@media only screen and (min-width: 760px) {
+	.background {
+		background-image: url("https://res.cloudinary.com/dusr8fbuo/image/upload/v1602256550/vicky-t--hvreTxuYxA-unsplash_1_jgtfju.jpg");
+	}
+
+	.Appjs {
+		width: 60%;
+		background-color: white;
+		margin: 0 auto;
+		border: 4px solid orange;
+	}
+
+	// .logos {
+	// 	padding: 10px;
+	// }
+}
+
+@media only screen and (min-width: 1020px) {
+	.Appjs {
+		width: 80%;
+		background-color: lightblue;
+	}
+
+	.section {
+		font-family: "Permanent Marker", cursive;
+		font-size: 50px;
+	}
+}

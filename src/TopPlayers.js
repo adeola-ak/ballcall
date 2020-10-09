@@ -3,8 +3,14 @@ import nba, { getPlayerHeadshotURL, getTeamID } from "nba-api-client";
 
 const TopPlayers = (props) => {
 	const names = props.playerNames;
-	console.log(names);
-	const nameID = names.map((player, index) => {
+	console.log("this is props", props);
+	// console.log(names);
+
+	const filtered = names.filter((name) => {
+		return name.Abbrev == props.match.params.abbrev;
+	});
+
+	const nameID = filtered.map((player, index) => {
 		const pIDs = nba.getPlayerID(player.Name);
 		const Abbre = player.Names;
 		console.log(Abbre);

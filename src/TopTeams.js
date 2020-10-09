@@ -13,7 +13,13 @@ const TopTeams = (props) => {
 
 		return (
 			<Link to={`/TopPlayers/${team.Abbrev}`}>
-				<img key={index} src={logo} alt="" style={{ height: "6em" }} />
+				<img
+					className="logos"
+					key={index}
+					src={logo}
+					alt=""
+					style={{ height: "6em" }}
+				/>
 			</Link>
 		);
 	});
@@ -21,7 +27,7 @@ const TopTeams = (props) => {
 	return (
 		<>
 			<div>
-				<h1>top in the {props.side}</h1>
+				<h1 className="section">top in the {props.side}</h1>
 				{imgs}
 				<Link to={`/conference/${props.side}/full`}>
 					<button>full conference</button>
