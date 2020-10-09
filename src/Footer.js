@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
 	return (
 		<>
-			<div>
+			<div className="footer">
 				<h5>© 2020 Adeola Akinsiku. All rights reserved</h5>
 			</div>
 		</>

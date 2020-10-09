@@ -5,7 +5,7 @@ import teamData from "./teamData.js";
 import TopTeams from "./TopTeams";
 import Conference from "./Conference";
 import TopPlayers from "./TopPlayers";
-import Nav from "./Nav";
+import Navi from "./Navi";
 import Footer from "./Footer";
 import playerNames from "./playerNames";
 import "./App.scss";
@@ -47,7 +47,7 @@ const App = () => {
 	return (
 		<div className="background">
 			<div className="Appjs">
-				<Nav />
+				<Navi />
 				<Switch>
 					<Route
 						path="/TopPlayers/:abbrev"
